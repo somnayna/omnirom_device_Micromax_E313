@@ -1,7 +1,7 @@
 # inherit from the proprietary version
--include vendor/huawei/g750t01/BoardConfigVendor.mk
+-include vendor/Micromax/E313/BoardConfigVendor.mk
 
-LOCAL_PATH := device/huawei/g750t01
+LOCAL_PATH := device/Micromax/E313
 
 # Board
 TARGET_BOARD_PLATFORM := mt6592
@@ -30,7 +30,7 @@ TARGET_USERIMAGES_USE_EXT4:=true
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := g750t01,G750-T01
+TARGET_OTA_ASSERT_DEVICE := E313,E313
 
 # AudioFX
 TARGET_IGNORE_VENDOR_AUDIO_EFFECTS_CONF := true
@@ -44,7 +44,7 @@ COMMON_GLOBAL_CPPFLAGS += -DMTK_HARDWARE
 BLOCK_BASED_OTA :=false
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/huawei/g750t01/ril/
+BOARD_RIL_CLASS := ../../../device/Micromax/E313/ril/
 
 BOARD_CONNECTIVITY_VENDOR := MediaTek
 BOARD_CONNECTIVITY_MODULE := conn_soc
@@ -73,7 +73,7 @@ BOARD_KERNEL_CMDLINE :=
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 #TARGET_KERNEL_CONFIG := 2014011_debug_defconfig
-#TARGET_KERNEL_SOURCE := kernel/huawei/g750t01
+#TARGET_KERNEL_SOURCE := kernel/Micromax/E313
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/MTKbootimg.mk
 BOARD_CUSTOM_BOOTIMG := true
@@ -108,7 +108,7 @@ TW_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brigh
 TW_EXCLUDE_SUPERSU := true
 TW_EXTRA_LANGUAGES := true
 TW_BUILD_ZH_CN_SUPPORT := true
-TW_DEFAULT_LANGUAGE := zh_CN
+TW_DEFAULT_LANGUAGE := en_US
 TARGET_RECOVERY_INITRC := $(LOCAL_PATH)/recovery/init.rc
 #TARGET_PREBUILT_RECOVERY_KERNEL := $(LOCAL_PATH)/recovery_kernel
 
@@ -139,7 +139,7 @@ BOARD_EGL_NEEDS_FNW := true
 TARGET_REQUIRES_SYNCHRONOUS_SETSURFACE := true
 
 # Selinux
-BOARD_SEPOLICY_DIRS += device/huawei/g750t01/sepolicy
+BOARD_SEPOLICY_DIRS += device/Micromax/E313/sepolicy
 
 # WIFI
 #BOARD_WLAN_DEVICE := MediaTek
